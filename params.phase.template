@@ -1,0 +1,32 @@
+#number of realisations
+N_rep = 100
+#basal Xt level
+X_basal = 0
+#total simulation duration
+t_total = 50
+#time after which signal is applied
+t_burnin = 20
+#inverse noise level
+copy_number = 5623.4
+#parameter to be modified by X
+modified_parameter = _P
+#whether to down-regulate rate
+down = _D
+
+[signal]
+#target Xt level
+X_signal = _X
+#time for which signal is active
+duration = _T
+
+#Choose dynamics of Xt from one of the following sections: linear exp step
+
+# profile = exp
+#rate at which Xt changes (optional for step profile)
+# decay_rate = 4
+
+# profile = linear
+# #time taken for Xt to reach target value
+# transition_time = 3
+
+profile = step
