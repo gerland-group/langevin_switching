@@ -2,9 +2,9 @@
 
 (c) 2020 Filipe Tostevin, Manon Wigbers
 
-This software was used in the manuscript "Four different mechanisms for
-switching cell polarity" by Tostevin F.\*, Wigbers M.\*, Søgaard-Andersen L. &
-Gerland U. (_full publication details to follow_).
+This software was used in the manuscript "[Four different mechanisms for
+switching cell polarity](https://www.biorxiv.org/content/10.1101/2020.06.16.155952v1)." by Tostevin F.\*, Wigbers M.\*, Søgaard-Andersen L. &
+Gerland U.
 
 The software simulates the dynamics of the Langevin model of the Mgl-Rom _M.
 xanthus_ polarity system described in the above work, which is based on the
