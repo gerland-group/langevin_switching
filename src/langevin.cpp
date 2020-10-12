@@ -42,7 +42,12 @@ int main(
 	}
 
 	boost::property_tree::ptree P;
-	boost::property_tree::read_ini("params.in",P);
+	try{
+		boost::property_tree::read_ini("params.in",P);
+	} catch(...) {
+		cerr << "Input file not found: params.in" << endl;
+		exit(EXIT_FAILURE);
+	}
 	const int Nrep=P.get<int>("N_rep");                               // Number of realizations to run
 	const double Xt_basal=P.get<double>("X_basal");                   // Xt level before and after the signal
 	const double t_burnin=P.get<double>("t_burnin");                  // Time at which signal is applied
